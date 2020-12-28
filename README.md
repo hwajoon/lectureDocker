@@ -1,4 +1,5 @@
 https://goddaehee.tistory.com/251
+https://ghostweb.tistory.com/979
 
 # 1. ubuntu & Virtualbox 
 <code><pre>
