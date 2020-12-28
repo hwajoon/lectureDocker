@@ -1,7 +1,10 @@
+# Ubuntu 참고 자료
+<code><pre>
 https://goddaehee.tistory.com/251
 https://ghostweb.tistory.com/979
+</pre></code>
 
-# 1. ubuntu & Virtualbox 
+# ubuntu & Virtualbox 다운로드
 <code><pre>
 * ubuntu 이미지 다운로드 (확장자가 ova)
 * 버츄얼 박스 다운로드 (https://www.virtualbox.org/wiki/Downloads) / select the Windows hosts.
@@ -70,3 +73,9 @@ https://ghostweb.tistory.com/979
  - 회원 가입하였던 ID로 로그인 한다.
  - 다음과 같은 화면이 나온다면 이제 도커를 사용할 기본적인 준비는 완료 되었다.
 
+
+# Ubuntu 명령어
+<code><pre>
+sudo -i
+sudo apt install docker.io
+</code></pre>
