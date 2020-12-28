@@ -77,10 +77,11 @@ https://ghostweb.tistory.com/979
 # Ubuntu 명령어
 <code><pre>
 sudo -i
+sudo apt-get update
 sudo apt install docker.io   //----------->   docker 설치
 docker  //------------------> docker 도움말
 docker search tomcat
-docker -d -p 8080:8080 --name tc console/tomcat-7.0   // -d:background
+docker run -d -p 8080:8080 --name tc console/tomcat-7.0   // -d:background
 브라우저 실행 후 127.0.0.1:8080
 </code></pre>
 
