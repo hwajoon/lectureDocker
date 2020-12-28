@@ -127,3 +127,19 @@ sudo docker stop <container id> f6e513b399a6   # 컨테이너 실행 중지
 <code><pre>
 sudo docker rm <container id> f6e513b399a6   # 컨테이너 삭제
 </pre></code>
+
+
+# docker 예제
+<code><pre>
+docker pull nginx   // registry -> image
+docker create -p 80:80 --name nx nginx   // image -> container
+docker ps -a   //  모든 컨테이너 확인
+docker start 25ff4529ee4c<CONTAINER ID>  or nx<NAME>   // memory에 nx 실행
+확인은 127.0.01 실행해서 ....
+docker run -d -p 83:80 --name nx2 nginx
+docker rm <continer id>  // continer에서 삭제
+docker stop nx  //  memory에서 nx을 stop
+docker restart nx  // memory에서 nx을 재시작
+docker images   //  모든 이미지 확인
+docker rmi nginx   //  nginx 이미지 삭제
+</pre></code>
