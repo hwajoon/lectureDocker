@@ -95,3 +95,35 @@ https://hub.docker.com/
 docker pull <다운로드 받고자 하는 이미지> ex) mysql
 docker images // ------------>  다운로드 받은 이미지 목록 확인
 </code></pre>
+
+
+# 도커 이미지 다운로드와 삭제
+<code><pre>
+sudo docker pull consol/tomcat-7.0
+sudo docker rmi consol/tomcat-7.0
+</pre></code>
+
+# 도커 컨테이너 생성
+<code><pre>
+sudo docker run -d -name tc tomcat # 톰캣 생성 및 실행
+</pre></code>
+
+# 실행중인 컨테이너 확인
+<code><pre>
+sudo docker ps   # 톰캣 컨테이너 확인
+</pre></code>
+
+# 모든 컨테이너 확인
+<code><pre>
+sudo docker ps -a  # 모든 컨테이너 확인
+</pre></code>
+
+# 컨테이너 중지
+<code><pre>
+sudo docker stop <container id> f6e513b399a6   # 컨테이너 실행 중지
+</pre></code>
+
+# 컨테이너 삭제
+<code><pre>
+sudo docker rm <container id> f6e513b399a6   # 컨테이너 삭제
+</pre></code>
