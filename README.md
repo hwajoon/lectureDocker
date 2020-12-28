@@ -143,3 +143,73 @@ docker restart nx  // memory에서 nx을 재시작
 docker images   //  모든 이미지 확인
 docker rmi nginx   //  nginx 이미지 삭제
 </pre></code>
+
+# 도커 이미지 정보 확인
+<code><pre>
+sudo docker pull nginx
+sudo docker inspect nginx
+</pre></code>
+
+# 도커 이미지 저장소 위치 확인
+<code><pre>
+sudo docker info
+sudo -i
+cd /var/lib/docker/overlay2
+</pre></code>
+
+# 레이어 저장소 확인
+<code><pre>
+</pre></code>
+
+# 도커 히스토리 확인
+<code><pre>
+docker history nginx
+</pre></code>
+
+# 이미지의 사이즈 정보 확인
+<code><pre>
+du -sh image
+</pre></code>
+
+#  저장소 사이즈 정보 확인
+<code><pre>
+du -sh overlay2
+</pre></code>
+
+# 포트포워딩으로 톰캣 실행하기
+<code><pre>
+sudo docker run -d --name tc -p 80:8080 tomcat
+firefox 127.0.0.1:80
+</pre></code>
+
+# 컨테이너 내부 셀 실행
+<code><pre>
+sudo docker exec -it tc /bin/bash
+</pre></code>
+
+# 컨테이너 로그 확인
+<code><pre>
+sudo docker logs tc   # stdout, stderr
+</pre></code>
+
+# 호스트 및 컨테이너 간 파일 복사
+<code><pre>
+sudo docker cp <path> <to container>:<path>
+sudo docker cp <from container>:<path> <path>
+sudo docker cp <from container>:<path> <to container>:<path>
+
+ex) 
+ls
+echo test1234 > test.txt
+cat test.txt
+docker cp test.txt tc:/
+docker exec -it tc cat /test.txt
+docker cp tc:/test.txt ./test2.txt
+cat test2.txt
+</pre></code>
+
+# 임시 컨테이너 생성
+<code><pre>
+sudo docker run -d -p 80:8080 --rm --name tc tomcat
+</pre></code>
+
