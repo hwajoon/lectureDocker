@@ -77,5 +77,20 @@ https://ghostweb.tistory.com/979
 # Ubuntu 명령어
 <code><pre>
 sudo -i
-sudo apt install docker.io
+sudo apt install docker.io   //----------->   docker 설치
+docker  //------------------> docker 도움말
+docker search tomcat
+docker -d -p 8080:8080 --name tc console/tomcat-7.0   // -d:background
+브라우저 실행 후 127.0.0.1:8080
+</code></pre>
+
+# Docker 컨테이너 찾기
+<code><pre>
+https://hub.docker.com/
+</code></pre>
+
+# Docker에서 원하는 이미지 다운로드하기
+<code><pre>
+docker pull <다운로드 받고자 하는 이미지> ex) mysql
+docker images // ------------>  다운로드 받은 이미지 목록 확인
 </code></pre>
