@@ -1,4 +1,9 @@
+# https://www.youtube.com/watch?v=YSKdWt4SwDw
+
+
 <code><pre>
+
+Docker Desktop 설치해서 확인하는 것이 편함.
 
 1. npm 설치
 2. http://expressjs.com/  => 시작하기
@@ -68,7 +73,6 @@ alpine/git             latest    ed0ba0fc6585   9 days ago           28.4MB
 D:\workspace\lecture\Docker\myapp>
 </pre></code>
 
-
 <code><pre>
 D:\workspace\lecture\Docker\myapp>docker run -d -p 80:3000 --name hnt helloworld-node-test:0.0.1
 b2940b7b9cb2fbc34db1a87c5b52cde05cab803810c09ad13751e9696b4ba8db
@@ -81,4 +85,7 @@ b2940b7b9cb2   helloworld-node-test:0.0.1   "docker-entrypoint.s…"   11 second
 D:\workspace\lecture\Docker\myapp>
 
 ====> http://localhost:80 으로 접속해서 확인
+
+Docker Desktop / LOCAL에서 이미지에 추가된 것을 확인할 수 있음
+
 </pre></code>
